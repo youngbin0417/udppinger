@@ -1,6 +1,11 @@
 import socket
 
-server_ip = ''
+def load_ip(filename): 
+    with open(filename, 'r') as f:
+        return f.read().strip()
+
+# ip주소가 들어간 config.txt를 로컬에 둠
+server_ip = load_ip('config.txt')
 server_port = 10458
 
 # create socket
