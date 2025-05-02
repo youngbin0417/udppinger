@@ -1,0 +1,4 @@
+OS: windows 11 home 64bit
+CPU: AMD Ryzen 7 PRO 7840U w/ Radeon 780M Graphics 3.30 GHz
+Python version: 3.12.6
+IDE: VScode
