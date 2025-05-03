@@ -23,10 +23,11 @@ for i in range(5):
     try:
         # create datagram with serverIP address
         client_socket.sendto(message.encode(), (server_ip, server_port))
-    
+        print(f"Sending to {server_ip}:{server_port} → {message}")
+
         # read datagram
         data, _ = client_socket.recvfrom(1024)
-        end_time=time.time
+        end_time=time.time()
         
         rtt=(end_time-start_time) * 1000
         rtts.append(rtt)
